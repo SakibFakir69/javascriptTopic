@@ -1,0 +1,5 @@
+
+this
+
+1. make a function that return day , use new Date.getDay()
+
