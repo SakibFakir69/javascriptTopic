@@ -135,3 +135,45 @@ const callMe = (a, b, opration) => {
 
 }
 callMe(1,2, "sub")
+
+
+
+
+
+const users = [
+  { name: "Sakib", balance: 100 },
+  { name: "Rahim", balance: 200 }
+];
+// gave 50 bdt all user use dry 
+
+
+// wet  -> so user for loop to get index
+// then access balance object and add
+
+const addBDT = (userList)=>{
+
+    for(let i=0; i<userList.length; i++)
+    {
+        userList[i].balance+=50;
+    }
+    return userList;
+
+}
+const output = addBDT(users);
+console.log(output);
+
+
+// map use  -> transfrom each element from array and return new array 
+
+const easyWay = (users) =>{
+
+    const result = users.map((user)=> ({
+         name:user.name,
+        balance:user.balance
+       
+    }));
+    return result;
+
+}
+const output2 = easyWay(users);
+console.log(output2)
